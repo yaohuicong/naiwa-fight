@@ -1,0 +1,23 @@
+{
+  "name": "naiwa-fight",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "artifact": "npm run font && vite build && node tools/artifact_page.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "sprites": "python3 -I tools/build_sprites.py .",
+    "font": "node tools/subset_font.mjs drive-assets/fonts/fusion-pixel-12px-proportional-zh_hans.ttf.woff2 public/assets/fonts/fusion-pixel-subset.woff2 .",
+    "stage": "python3 -I tools/build_stage.py ."
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "subset-font": "^2.4.0",
+    "typescript": "5.8.3",
+    "vite": "6.4.5"
+  }
+}

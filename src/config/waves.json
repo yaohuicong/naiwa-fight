@@ -1,0 +1,38 @@
+{
+  "_note": "关卡 4 屏宽（对应场景 4 段：A 巷口 / B 便利店 / C 后巷 / D 网咖门口）；trigger = 玩家走到的 X；lock = 锁屏区间（宽 960）；spawn.delay 单位 tick",
+  "levelWidth": 3840,
+  "playerStartX": 200,
+  "waves": [
+    {
+      "id": "W1",
+      "label": "WAVE 1",
+      "trigger": 1150,
+      "lock": [960, 1920],
+      "spawns": [
+        {"type": "dounai", "side": "right", "delay": 0},
+        {"type": "melee", "side": "right", "delay": 40},
+        {"type": "dounai", "side": "left", "delay": 80},
+        {"type": "melee", "side": "left", "delay": 300},
+        {"type": "dounai", "side": "right", "delay": 340},
+        {"type": "melee", "side": "right", "delay": 420}
+      ]
+    },
+    {
+      "id": "W2",
+      "label": "WAVE 2",
+      "trigger": 2110,
+      "lock": [1920, 2880],
+      "spawns": [
+        {"type": "melee", "side": "right", "delay": 0},
+        {"type": "dounai", "side": "right", "delay": 25},
+        {"type": "dounai", "side": "left", "delay": 50},
+        {"type": "melee", "side": "left", "delay": 220},
+        {"type": "dounai", "side": "right", "delay": 250},
+        {"type": "melee", "side": "right", "delay": 470},
+        {"type": "dounai", "side": "left", "delay": 520},
+        {"type": "melee", "side": "left", "delay": 580}
+      ]
+    }
+  ],
+  "boss": {"trigger": 3060, "lock": [2880, 3840], "spawnX": 3900, "standX": 3560}
+}

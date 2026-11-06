@@ -1,0 +1,17 @@
+node_modules
+dist
+tools/out
+drive-unzipped
+
+# 原始素材在作者的 Google Drive「奶娃」，不随仓库发布（游戏用到的成品素材在 public/assets）
+drive-assets
+
+# 从云盘拉素材的本地辅助脚本和清单（含云盘文件 ID、本机路径）
+tools/drive_listing_*.json
+tools/fetch_*.py
+tools/decode_drive.py
+tools/extract_inline_downloads.py
+
+__pycache__/
+*.pyc
+.DS_Store

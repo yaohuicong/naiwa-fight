@@ -1,0 +1,338 @@
+{
+ "nc_idle": {
+  "frames": 6,
+  "frameWidth": 196,
+  "frameHeight": 331,
+  "originY": 0.9909,
+  "medianHeight": 318,
+  "refHeight": 315
+ },
+ "nc_walk": {
+  "frames": 8,
+  "frameWidth": 190,
+  "frameHeight": 291,
+  "originY": 0.9897,
+  "medianHeight": 284,
+  "refHeight": 279
+ },
+ "nc_run": {
+  "frames": 8,
+  "frameWidth": 270,
+  "frameHeight": 294,
+  "originY": 0.9898,
+  "medianHeight": 283,
+  "refHeight": 280
+ },
+ "nc_light": {
+  "frames": 8,
+  "frameWidth": 370,
+  "frameHeight": 267,
+  "originY": 0.9888,
+  "medianHeight": 232,
+  "refHeight": 225
+ },
+ "nc_heavy": {
+  "frames": 12,
+  "frameWidth": 398,
+  "frameHeight": 192,
+  "originY": 0.9844,
+  "medianHeight": 177,
+  "refHeight": 182
+ },
+ "nc_special": {
+  "frames": 12,
+  "frameWidth": 338,
+  "frameHeight": 224,
+  "originY": 0.9866,
+  "medianHeight": 194,
+  "refHeight": 194
+ },
+ "nc_hurt": {
+  "frames": 4,
+  "frameWidth": 348,
+  "frameHeight": 352,
+  "originY": 0.9915,
+  "medianHeight": 346,
+  "refHeight": 339
+ },
+ "nc_down": {
+  "frames": 6,
+  "frameWidth": 264,
+  "frameHeight": 260,
+  "originY": 0.9885,
+  "medianHeight": 215,
+  "refHeight": 251
+ },
+ "nc_getup": {
+  "frames": 5,
+  "frameWidth": 292,
+  "frameHeight": 327,
+  "originY": 0.9908,
+  "medianHeight": 286,
+  "refHeight": 318
+ },
+ "nc_win": {
+  "frames": 6,
+  "frameWidth": 250,
+  "frameHeight": 422,
+  "originY": 0.9929,
+  "medianHeight": 327,
+  "refHeight": 317
+ },
+ "nc_laugh": {
+  "frames": 8,
+  "frameWidth": 230,
+  "frameHeight": 300,
+  "originY": 0.99,
+  "medianHeight": 293,
+  "refHeight": 288
+ },
+ "dn_idle": {
+  "frames": 4,
+  "frameWidth": 182,
+  "frameHeight": 285,
+  "originY": 0.9895,
+  "medianHeight": 279,
+  "refHeight": 279
+ },
+ "dn_throw": {
+  "frames": 8,
+  "frameWidth": 418,
+  "frameHeight": 275,
+  "originY": 0.9891,
+  "medianHeight": 266,
+  "refHeight": 269
+ },
+ "dn_hurt": {
+  "frames": 3,
+  "frameWidth": 230,
+  "frameHeight": 289,
+  "originY": 0.9896,
+  "medianHeight": 279,
+  "refHeight": 279
+ },
+ "dn_death": {
+  "frames": 7,
+  "frameWidth": 242,
+  "frameHeight": 226,
+  "originY": 0.9867,
+  "medianHeight": 203,
+  "refHeight": 209
+ },
+ "dn_mic": {
+  "frames": 4,
+  "frameWidth": 122,
+  "frameHeight": 92,
+  "originY": 0.9674,
+  "medianHeight": 81,
+  "refHeight": 85
+ },
+ "nh_idle": {
+  "frames": 6,
+  "frameWidth": 204,
+  "frameHeight": 335,
+  "originY": 0.991,
+  "medianHeight": 330,
+  "refHeight": 330
+ },
+ "nh_walk": {
+  "frames": 8,
+  "frameWidth": 158,
+  "frameHeight": 250,
+  "originY": 0.988,
+  "medianHeight": 247,
+  "refHeight": 247
+ },
+ "nh_run": {
+  "frames": 8,
+  "frameWidth": 188,
+  "frameHeight": 233,
+  "originY": 0.9871,
+  "medianHeight": 228,
+  "refHeight": 230
+ },
+ "nh_hurt": {
+  "frames": 4,
+  "frameWidth": 316,
+  "frameHeight": 373,
+  "originY": 0.992,
+  "medianHeight": 368,
+  "refHeight": 370
+ },
+ "nh_down": {
+  "frames": 6,
+  "frameWidth": 256,
+  "frameHeight": 241,
+  "originY": 0.9876,
+  "medianHeight": 202,
+  "refHeight": 238
+ },
+ "nh_win": {
+  "frames": 6,
+  "frameWidth": 230,
+  "frameHeight": 345,
+  "originY": 0.9913,
+  "medianHeight": 334,
+  "refHeight": 336
+ },
+ "nc_jump": {
+  "frames": 6,
+  "frameWidth": 192,
+  "frameHeight": 282,
+  "originY": 0.9894,
+  "medianHeight": 244,
+  "refHeight": 231
+ },
+ "nc_ko": {
+  "frames": 8,
+  "frameWidth": 216,
+  "frameHeight": 193,
+  "originY": 0.9845,
+  "medianHeight": 170,
+  "refHeight": 185
+ },
+ "dn_walk": {
+  "frames": 8,
+  "frameWidth": 170,
+  "frameHeight": 287,
+  "originY": 0.993,
+  "medianHeight": 282,
+  "refHeight": 281
+ },
+ "nh_hack_fx": {
+  "frames": 12,
+  "frameWidth": 370,
+  "frameHeight": 306,
+  "originY": 0.9902,
+  "medianHeight": 260,
+  "refHeight": 295
+ },
+ "nh_hole_fx": {
+  "frames": 12,
+  "frameWidth": 382,
+  "frameHeight": 322,
+  "originY": 0.9907,
+  "medianHeight": 284,
+  "refHeight": 303
+ },
+ "nh_ko": {
+  "frames": 8,
+  "frameWidth": 370,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 266,
+  "refHeight": 379
+ },
+ "nh_getup": {
+  "frames": 5,
+  "frameWidth": 344,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 311,
+  "refHeight": 379
+ },
+ "nh_attack": {
+  "frames": 8,
+  "frameWidth": 342,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 377,
+  "refHeight": 377
+ },
+ "nh_charge": {
+  "frames": 8,
+  "frameWidth": 368,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 373,
+  "refHeight": 379
+ },
+ "nc_jattack": {
+  "frames": 4,
+  "frameWidth": 340,
+  "frameHeight": 331,
+  "originY": 0.9909,
+  "medianHeight": 275,
+  "refHeight": 265
+ },
+ "nc_dodge": {
+  "frames": 6,
+  "frameWidth": 352,
+  "frameHeight": 329,
+  "originY": 0.9909,
+  "medianHeight": 288,
+  "refHeight": 320
+ },
+ "ml_idle": {
+  "frames": 6,
+  "frameWidth": 200,
+  "frameHeight": 316,
+  "originY": 0.9937,
+  "medianHeight": 310,
+  "refHeight": 312
+ },
+ "ml_walk": {
+  "frames": 8,
+  "frameWidth": 191,
+  "frameHeight": 316,
+  "originY": 0.9937,
+  "medianHeight": 312,
+  "refHeight": 312
+ },
+ "ml_attack": {
+  "frames": 8,
+  "frameWidth": 308,
+  "frameHeight": 306,
+  "originY": 0.9902,
+  "medianHeight": 291,
+  "refHeight": 300
+ },
+ "ml_hurt": {
+  "frames": 4,
+  "frameWidth": 306,
+  "frameHeight": 288,
+  "originY": 0.9896,
+  "medianHeight": 281,
+  "refHeight": 282
+ },
+ "ml_death": {
+  "frames": 6,
+  "frameWidth": 270,
+  "frameHeight": 342,
+  "originY": 0.9912,
+  "medianHeight": 262,
+  "refHeight": 278
+ },
+ "nh_dance": {
+  "frames": 24,
+  "frameWidth": 280,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 368,
+  "refHeight": 373
+ },
+ "nh_type": {
+  "frames": 16,
+  "frameWidth": 350,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 377,
+  "refHeight": 379
+ },
+ "nh_hack": {
+  "frames": 12,
+  "frameWidth": 314,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 379,
+  "refHeight": 379
+ },
+ "nh_hole": {
+  "frames": 12,
+  "frameWidth": 320,
+  "frameHeight": 382,
+  "originY": 0.9921,
+  "medianHeight": 379,
+  "refHeight": 379
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "stage": {
+  "sky": "assets/stage/l0_sky.webp",
+  "far": "assets/stage/l1_far.webp",
+  "mid": [
+   "assets/stage/l2_mid_0.webp",
+   "assets/stage/l2_mid_1.webp",
+   "assets/stage/l2_mid_2.webp",
+   "assets/stage/l2_mid_3.webp"
+  ],
+  "midOff": [
+   [
+    0,
+    0
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    8,
+    0
+   ],
+   [
+    8,
+    0
+   ]
+  ],
+  "near": [
+   "assets/stage/l3_near_0.webp",
+   "assets/stage/l3_near_1.webp",
+   "assets/stage/l3_near_2.webp",
+   "assets/stage/l3_near_3.webp"
+  ],
+  "nearOff": [
+   [
+    0,
+    520
+   ],
+   [
+    0,
+    520
+   ],
+   [
+    0,
+    520
+   ],
+   [
+    0,
+    480
+   ]
+  ],
+  "front": [
+   "assets/stage/l5_front_v2.webp"
+  ],
+  "frontOff": [
+   [
+    0,
+    960
+   ]
+  ],
+  "ground": "assets/stage/l4_ground.webp",
+  "fog": "assets/stage/fog.webp",
+  "lamp": "assets/stage/lamp.webp",
+  "lampGlow": "assets/stage/lamp_glow.webp",
+  "puddles": "assets/stage/puddles.webp",
+  "gate": "assets/stage/gate.webp",
+  "neonTea": "assets/stage/neon_neonTea.webp",
+  "neonShop": "assets/stage/neon_neonShop.webp",
+  "neonNet": "assets/stage/neon_neonNet.webp",
+  "breakables": "assets/stage/breakables.webp",
+  "pickups": "assets/stage/pickups.webp"
+ },
+ "ui": {
+  "titleArt": {
+   "url": "assets/ui/title_art.webp"
+  },
+  "stagePanel": {
+   "url": "assets/ui/stagePanel.png",
+   "w": 321,
+   "h": 170
+  },
+  "comboPanel": {
+   "url": "assets/ui/comboPanel.png",
+   "w": 420,
+   "h": 189
+  },
+  "goalBar": {
+   "url": "assets/ui/goalBar.png",
+   "w": 618,
+   "h": 64
+  },
+  "banner": {
+   "url": "assets/ui/banner.png",
+   "w": 1100,
+   "h": 200
+  },
+  "panel": {
+   "url": "assets/ui/panel.png",
+   "w": 900,
+   "h": 520
+  },
+  "logo": {
+   "url": "assets/ui/logo.png",
+   "w": 999,
+   "h": 398
+  },
+  "portraitNc": {
+   "url": "assets/ui/portraitNc.png",
+   "w": 128,
+   "h": 128
+  },
+  "portraitNh": {
+   "url": "assets/ui/portraitNh.png",
+   "w": 128,
+   "h": 122
+  },
+  "miniBar": {
+   "url": "assets/ui/miniBar.png",
+   "w": 80,
+   "h": 12
+  },
+  "hpFrame": {
+   "url": "assets/ui/hpFrame.png",
+   "w": 438,
+   "h": 96,
+   "groove": [
+    62,
+    30,
+    317,
+    27
+   ]
+  },
+  "bossFrame": {
+   "url": "assets/ui/bossFrame.png",
+   "w": 465,
+   "h": 96,
+   "groove": [
+    89,
+    29,
+    292,
+    37
+   ]
+  },
+  "fillHp": {
+   "url": "assets/ui/fillHp.png",
+   "w": 600,
+   "h": 24
+  },
+  "fillTrail": {
+   "url": "assets/ui/fillTrail.png",
+   "w": 600,
+   "h": 24
+  },
+  "fillEnergy": {
+   "url": "assets/ui/fillEnergy.png",
+   "w": 600,
+   "h": 24
+  },
+  "nodes": {
+   "url": "assets/ui/nodes.png",
+   "frameWidth": 48,
+   "frameHeight": 48
+  },
+  "bossIcons": {
+   "url": "assets/ui/bossIcons.png",
+   "frameWidth": 40,
+   "frameHeight": 40
+  },
+  "goArrow": {
+   "url": "assets/ui/goArrow.png",
+   "frameWidth": 96,
+   "frameHeight": 64
+  },
+  "comboDigits": {
+   "url": "assets/ui/comboDigits.png",
+   "frameWidth": 64,
+   "frameHeight": 96
+  },
+  "dmgDigits": {
+   "url": "assets/ui/dmgDigits.png",
+   "frameWidth": 32,
+   "frameHeight": 44
+  },
+  "buttons": {
+   "url": "assets/ui/buttons.png",
+   "frameWidth": 360,
+   "frameHeight": 72
+  },
+  "koWord": {
+   "url": "assets/ui/koWord.png"
+  },
+  "clearWord": {
+   "url": "assets/ui/clearWord.png"
+  }
+ },
+ "fx": {
+  "sparkLight": {
+   "url": "assets/fx/sparkLight.png",
+   "frameWidth": 96,
+   "frameHeight": 96,
+   "frames": 6
+  },
+  "sparkHeavy": {
+   "url": "assets/fx/sparkHeavy.png",
+   "frameWidth": 160,
+   "frameHeight": 160,
+   "frames": 8
+  },
+  "trail": {
+   "url": "assets/fx/trail.png",
+   "frameWidth": 256,
+   "frameHeight": 192,
+   "frames": 10
+  },
+  "splash": {
+   "url": "assets/fx/splash.png",
+   "frameWidth": 128,
+   "frameHeight": 128,
+   "frames": 6
+  },
+  "dust": {
+   "url": "assets/fx/dust.png",
+   "frameWidth": 192,
+   "frameHeight": 96,
+   "frames": 6
+  },
+  "poof": {
+   "url": "assets/fx/poof.png",
+   "frameWidth": 192,
+   "frameHeight": 192,
+   "frames": 8
+  },
+  "micBreak": {
+   "url": "assets/fx/micBreak.png",
+   "frameWidth": 96,
+   "frameHeight": 96,
+   "frames": 6
+  },
+  "superReady": {
+   "url": "assets/fx/superReady.png",
+   "frameWidth": 256,
+   "frameHeight": 256,
+   "frames": 8
+  },
+  "warnRing": {
+   "url": "assets/fx/warnRing.png",
+   "frameWidth": 256,
+   "frameHeight": 64,
+   "frames": 6
+  },
+  "rainSplash": {
+   "url": "assets/fx/rainSplash.png",
+   "frameWidth": 32,
+   "frameHeight": 32,
+   "frames": 8
+  },
+  "ringNormal": {
+   "url": "assets/fx/ringNormal.png",
+   "frameWidth": 512,
+   "frameHeight": 128,
+   "frames": 8,
+   "halfWidth": [
+    203,
+    218,
+    200,
+    215,
+    211,
+    196,
+    200,
+    200
+   ]
+  },
+  "ringBeat": {
+   "url": "assets/fx/ringBeat.png",
+   "frameWidth": 512,
+   "frameHeight": 128,
+   "frames": 8,
+   "halfWidth": [
+    70,
+    96,
+    120,
+    152,
+    176,
+    194,
+    234,
+    256
+   ]
+  },
+  "rainBack": {
+   "url": "assets/fx/rainBack.png"
+  },
+  "rainFront": {
+   "url": "assets/fx/rainFront.png"
+  }
+ }
+}

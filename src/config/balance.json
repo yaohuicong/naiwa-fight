@@ -1,0 +1,211 @@
+{
+  "_note": "所有数值【可调】。时间单位：tick = 1/60 秒；速度 px/s（逻辑分辨率 960x540）。hitbox box = [前向偏移, 离地高度(中心), 宽, 高]",
+  "world": {"groundY": 458, "gravity": 1400, "cameraLerp": 0.15, "cameraLead": 40},
+  "feel": {
+    "inputBufferTicks": 8,
+    "hitFlashTicks": 5,
+    "groundFriction": 0.88,
+    "shakeLight": 1.5,
+    "shakeHeavy": 3.5,
+    "shakeBeat": 2,
+    "shakeBlast": 4,
+    "comboResetTicks": 90,
+    "killSlowmoTicks": 45,
+    "killSlowmoScale": 0.35,
+    "superFreezeTicks": 18
+  },
+  "heights": {"nc": 165, "dn": 132, "ml": 148, "nh": 205},
+  "player": {
+    "maxHp": 1000,
+    "walk": 160,
+    "run": 280,
+    "doubleTapTicks": 14,
+    "jumpVel": 460,
+    "airControl": 0.85,
+    "energyMax": 100,
+    "energyOnLight": 5,
+    "energyOnHeavy": 12,
+    "energyOnHurt": 3,
+    "knockdownThreshold": 120,
+    "knockdownDecayPerSec": 60,
+    "lieTicks": 30,
+    "getupInvulnTicks": 36,
+    "continues": -1,
+    "hurtbox": {"w": 50, "h": 136},
+    "_airTuck": "跳起时收腿：受击框底边抬高的像素，让跳跃能躲过贴地/低飞的攻击（麦克风、水波）",
+    "airTuck": 32,
+    "_dodge": "闪避翻滚（S / ↓ / 手柄 LB）：invuln 为无敌的 tick 区间，move 为位移区间与速度",
+    "dodge": {"invuln": [2, 20], "move": [2, 21], "speed": 340, "cooldown": 20}
+  },
+  "attacks": {
+    "L1": {
+      "anim": "nc_light",
+      "steps": [[0, 4], [1, 4], [2, 7], [2, 7]],
+      "hits": [{"from": 8, "to": 11, "dmg": 40, "hitstop": 4, "hitstun": 16, "kb": 110, "knock": 20, "box": [52, 80, 84, 72], "shake": 1, "energy": 5}],
+      "move": [[3, 10, 60]],
+      "cancelFrom": 11,
+      "cancelInto": ["L2", "H", "S"]
+    },
+    "L2": {
+      "anim": "nc_light",
+      "steps": [[3, 4], [4, 6], [4, 8]],
+      "hits": [{"from": 4, "to": 7, "dmg": 40, "hitstop": 4, "hitstun": 17, "kb": 120, "knock": 25, "box": [62, 92, 92, 52], "shake": 1, "energy": 5}],
+      "move": [[0, 6, 70]],
+      "cancelFrom": 7,
+      "cancelInto": ["L3", "H", "S"]
+    },
+    "L3": {
+      "anim": "nc_light",
+      "steps": [[7, 5], [5, 4], [5, 6], [6, 8], [6, 6]],
+      "hits": [
+        {
+          "from": 5,
+          "to": 10,
+          "dmg": 40,
+          "hitstop": 7,
+          "hitstun": 24,
+          "kb": 260,
+          "kbUp": 220,
+          "knock": 90,
+          "box": [64, 42, 112, 72],
+          "shake": 2.5,
+          "energy": 5,
+          "finisher": true
+        }
+      ],
+      "move": [[0, 9, 120]],
+      "cancelFrom": 15,
+      "cancelInto": ["S"]
+    },
+    "H": {
+      "anim": "nc_heavy",
+      "steps": [[0, 4], [1, 3], [2, 3], [3, 4], [4, 5], [5, 5], [6, 3], [7, 9], [8, 5], [10, 5], [11, 5]],
+      "hits": [
+        {"from": 19, "to": 22, "dmg": 40, "hitstop": 5, "hitstun": 20, "kb": 60, "knock": 20, "box": [62, 78, 104, 62], "shake": 1.5, "energy": 6},
+        {
+          "from": 27,
+          "to": 31,
+          "dmg": 80,
+          "hitstop": 8,
+          "hitstun": 28,
+          "kb": 320,
+          "kbUp": 260,
+          "knock": 100,
+          "box": [72, 62, 136, 112],
+          "shake": 3.5,
+          "energy": 6,
+          "finisher": true
+        }
+      ],
+      "move": [[14, 30, 110]],
+      "cancelFrom": 38,
+      "cancelInto": ["S"]
+    },
+    "S": {
+      "anim": "nc_special",
+      "steps": [[0, 10], [1, 8], [2, 6], [3, 6], [4, 5], [5, 5], [6, 5], [8, 5], [4, 5], [5, 5], [6, 5], [8, 5], [9, 6], [10, 8], [11, 8]],
+      "hits": [
+        {
+          "from": 30,
+          "to": 70,
+          "dmg": 220,
+          "hitstop": 6,
+          "hitstun": 30,
+          "kb": 360,
+          "kbUp": 300,
+          "knock": 200,
+          "box": [72, 62, 136, 116],
+          "shake": 3,
+          "energy": 0,
+          "finisher": true,
+          "breaksArmor": true
+        }
+      ],
+      "move": [[22, 30, 120], [30, 70, 540]],
+      "cancelFrom": 999,
+      "cancelInto": [],
+      "invuln": true,
+      "cost": 100
+    },
+    "DASH": {
+      "_note": "跑动中按轻击：冲刺肩撞（借用重击第 5–10 帧），打飞一排小兵",
+      "anim": "nc_heavy",
+      "steps": [[4, 4], [5, 5], [7, 9], [8, 6], [10, 6]],
+      "hits": [
+        {
+          "from": 6,
+          "to": 17,
+          "dmg": 60,
+          "hitstop": 6,
+          "hitstun": 24,
+          "kb": 300,
+          "kbUp": 180,
+          "knock": 90,
+          "box": [70, 72, 120, 92],
+          "shake": 2.5,
+          "energy": 6,
+          "finisher": true
+        }
+      ],
+      "move": [[0, 17, 330]],
+      "cancelFrom": 24,
+      "cancelInto": ["S"]
+    },
+    "AIR": {
+      "anim": "nc_jattack",
+      "steps": [[0, 3], [1, 7], [2, 6], [3, 6]],
+      "hits": [{"from": 3, "to": 12, "dmg": 40, "hitstop": 5, "hitstun": 18, "kb": 140, "knock": 30, "box": [54, 30, 104, 96], "shake": 1.5, "energy": 5}],
+      "move": [],
+      "cancelFrom": 999,
+      "cancelInto": []
+    }
+  },
+  "dounai": {
+    "maxHp": 120,
+    "walk": 90,
+    "rangeMin": 220,
+    "rangeMax": 360,
+    "throwEvery": 96,
+    "throw": {"dmg": 35, "hitstop": 3, "hitstun": 14, "kb": 140, "knock": 40, "speed": 320, "height": 48, "releaseHeight": 76, "dropTicks": 12},
+    "hurtbox": {"w": 46, "h": 112},
+    "knockdownThreshold": 60
+  },
+  "melee": {
+    "maxHp": 300,
+    "walk": 130,
+    "chaseRadius": 400,
+    "attackRange": 82,
+    "cooldown": 70,
+    "attack": {
+      "steps": [[0, 10], [1, 11], [2, 4], [3, 6], [4, 6], [5, 8], [6, 8]],
+      "from": 21,
+      "to": 29,
+      "dmg": 55,
+      "hitstop": 5,
+      "hitstun": 18,
+      "kb": 200,
+      "knock": 60,
+      "box": [56, 70, 84, 64],
+      "lunge": [19, 29, 160]
+    },
+    "hurtbox": {"w": 58, "h": 118},
+    "knockdownThreshold": 90,
+    "maxAttackers": 2,
+    "_armor": "精锐出拳蓄力时（攻击判定之前）轻击打不断，只有重击、冲刺、三段收尾、大招能打断",
+    "armorWindup": true
+  },
+  "pickups": {"_note": "掉落物：小杯/大杯奶茶回血量、能量奶瓶加能量", "smallTea": 150, "bigTea": 400, "energy": 50},
+  "props": {
+    "_note": "可破坏物：kind 0 垃圾桶 / 1 纸箱；drop 0 小杯奶茶 / 1 大杯 / 2 能量奶瓶 / null 不掉",
+    "breakables": [
+      {"x": 640, "kind": 1, "drop": 2},
+      {"x": 1530, "kind": 0, "drop": 0},
+      {"x": 2290, "kind": 1, "drop": 0},
+      {"x": 2700, "kind": 0, "drop": 2},
+      {"x": 3250, "kind": 0, "drop": 1}
+    ],
+    "waveDrops": [0, 0],
+    "_intro": "开场巷口的两个豆奶（不锁屏）：玩家走到 trigger 后从右边进场",
+    "intro": {"trigger": 360, "spawns": [{"type": "dounai", "x": 1010, "target": 780}, {"type": "dounai", "x": 1060, "target": 900}]}
+  }
+}
